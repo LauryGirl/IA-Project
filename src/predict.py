@@ -16,8 +16,13 @@ def predict(img):
     result = array_[0]
     answer = np.argmax(result)
 
-    print(answer)
+    if answer == 0:
+        print('PLASMODIUM FALCIPARUM (MALARIA)')
+    elif answer == 1:
+        print('SARS-COV2 (COVID-19)')
+    else:
+        print('VIBRIO CHOLERAE (COLERA)')
     
     return answer
 
-predict('plasmodiumFalciparum.8.png')
+predict('sars-cov2.313.tif')
