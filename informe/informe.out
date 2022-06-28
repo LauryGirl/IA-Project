@@ -1,0 +1,19 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Presentaci\363n del objetivo}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Estructura}{chapter.1}% 3
+\BOOKMARK [0][-]{chapter.2}{Introducci\363n a las redes neuronales profundas}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Un poco de teor\355a ...}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Convolution}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.1}{Convolution Layer}{section.2.2}% 7
+\BOOKMARK [1][-]{section.2.3}{ReLu}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.3.1}{ReLu Layer}{section.2.3}% 9
+\BOOKMARK [1][-]{section.2.4}{Max Polling}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.4.1}{Polling Layer}{section.2.4}% 11
+\BOOKMARK [1][-]{section.2.5}{Fully Connected Layer}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.6}{Loss Layer}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.7}{Back propagation Algorithm}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.8}{Proceso de entrenamiento}{chapter.2}% 15
+\BOOKMARK [0][-]{chapter.3}{Detalles de la implementaci\363n}{}% 16
+\BOOKMARK [1][-]{section.3.1}{src}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.1.1}{train.py}{section.3.1}% 18
+\BOOKMARK [2][-]{subsection.3.1.2}{predict.py}{section.3.1}% 19
