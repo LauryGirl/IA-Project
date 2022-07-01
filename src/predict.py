@@ -25,4 +25,21 @@ def predict(img):
     
     return answer
 
-predict('sars-cov2.313.tif')
+
+predict('imgs/sars-cov2.313.tif')
+predict('imgs/sars-cov2.314.tif')
+predict('imgs/sars-cov2.315.tif')
+predict('imgs/sars-cov2.316.tif')
+predict('imgs/sars-cov2.317.tif')
+predict('imgs/sars-cov2.318.tif')
+predict('imgs/sars-cov2.319.tif')
+predict('imgs/sars-cov2.320.tif')
+predict('imgs/sars-cov2.321.tif')
+predict('imgs/cholera.165.png')
+predict('imgs/cholera.166.png')
+predict('imgs/cholera.167.png')
+predict('imgs/cholera.168.png')
+predict('imgs/plasmodiumFalciparum.167.png')
+predict('imgs/plasmodiumFalciparum.168.png')
+predict('imgs/plasmodiumFalciparum.169.png')
+predict('imgs/plasmodiumFalciparum.170.png')

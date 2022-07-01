@@ -1,7 +1,7 @@
 import os
 import tensorflow as tf
 from keras.preprocessing.image import ImageDataGenerator
-from tensorflow.python.keras import optimizers, backend as K
+from tensorflow.python.keras import backend as K
 from tensorflow.python.keras.models import Sequential
 from tensorflow.python.keras.layers import Dropout, Flatten, Dense, Activation, Convolution2D, MaxPooling2D 
 
@@ -16,12 +16,11 @@ height, length = 100, 100
 batch_size = 32
 steps = 1000
 steps_validation = 200
-filters_conv1, filters_conv2, filters_conv3, filters_conv4, filters_conv5, filters_conv6 = 32, 64, 128, 256, 512, 1024
+filters_conv1, filters_conv2, filters_conv3, filters_conv4, filters_conv5, filters_conv6 = 32, 64, 64, 64, 64, 64
 length_filter1 = (3,3) 
 length_filter2 = (2,2)
 length_pool = (2,2)
 class_ = 3
-lr = 0.0005
 
 #preprocessing images
 train_datagen = ImageDataGenerator(rescale = 1./255, shear_range = 0.3, zoom_range = 0.3, horizontal_flip = True)
@@ -60,11 +59,15 @@ cnn.add(Dense(class_, activation='softmax'))
 
 cnn.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 
-cnn.fit(training_images, steps_per_epoch=steps, epochs=epochs, validation_data=validation_images, validation_steps= steps_validation)
+history = cnn.fit(training_images, steps_per_epoch=steps, epochs=epochs, validation_data=validation_images, validation_steps= steps_validation)
 
 dir = '../model'
 if not os.path.exists(dir):
     os.mkdir(dir)
+
+f = open('../model/history.txt', 'a+')
+f.write(str(history.history))
+f.close()
 
 cnn.save('../model/model.h5')
 cnn.save_weights('../model/weigth.h5')
